@@ -32,14 +32,15 @@ h2{font-size: 18px; font-weight: bold;}
 .banner1{
 	font-family: 'Playball', cursive;
 	text-align: center;
-	background: #1a8561ab;
+	background: #fdf6e46e;
 	text-shadow: 1px 1px 3px white;
 
 	display: flex;justify-content: center; align-items: center;
 	position: absolute; top: 0px; left: 0px;
-	width: 100vw; height: 35vh;
+	width: 100vw; height: 35vh; min-height: 200px;
 	z-index: 9999;
 }
+.banner1:hover{transform: scale(1.03); transition: 0.5s all ease-in-out;}
 .banner-anima{
 	padding: 0px 60px 15px 50px;
 
@@ -55,7 +56,7 @@ h2{font-size: 18px; font-weight: bold;}
 	100%{opacity: 1; transform: scale(1);}
 }
 .banner1 h1{font-size: 40px;line-height: 1.1;}
-.banner1 h2{font-size: 30px;}
+.banner1 h2{font-size: 30px;padding-top: 5px;}
 @media(min-width: 500px){
 	.banner1 h1{font-size: 50px;}
 	.banner1 h2{font-size: 35px;}
@@ -80,7 +81,7 @@ h2{font-size: 18px; font-weight: bold;}
 	animation-duration: 11s;
 	animation-iteration-count: infinite;
 }
-#diashow{width: 100vw; overflow: hidden; height: 35vh;}
+#diashow{width: 100vw; overflow: hidden; height: 35vh; min-height: 200px;}
 
 .slider img{width: 100vw; height: auto;}
 
@@ -199,7 +200,7 @@ p{}
 /*====================================================ABOUT====*/
 .about-wrap{margin: 0px -40px;
 	position: relative;
-	background: url(../img/simson1.jpg) no-repeat;
+	background: url(../img/silhuette02.png) no-repeat;
 	background-size: cover; background-position: center center;
 
 	font-family: arial;
