@@ -177,13 +177,13 @@ p{}
 	transform: translateY(-50%); top: 50%;
 
 	animation-name: foto-eins;
-	animation-duration: 55s; animation-timing-function: linear;
+	animation-duration: 60s; animation-timing-function: linear;
 	animation-iteration-count: infinite;}
 .foto2{position: absolute;
 	transform: translateY(-50%); top: 50%;
 
 	animation-name: foto-zwei;
-	animation-duration: 55s; animation-timing-function: linear;
+	animation-duration: 60s; animation-timing-function: linear;
 	animation-iteration-count: infinite;}
 @keyframes foto-eins{
 	0%{left: 100vw; opacity: 1;}
