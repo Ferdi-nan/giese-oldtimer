@@ -43,7 +43,7 @@ h2{font-size: 18px; font-weight: bold;}
 	z-index: 9999;
 }
 .banner1:hover{transform: scale(1.03); transition: 0.5s all ease-in-out;}
-.banner-anima{
+.banner-anima{overflow-x: hidden;
 	padding: 0px 60px 15px 50px;
 
 	animation-name: banner-eins;
@@ -64,9 +64,7 @@ h2{font-size: 18px; font-weight: bold;}
 	.banner1 h2{font-size: 35px;}
 	.banner1{height: 45vh;}
 }
-@media (max-width: 700px){.desktopslider{display: none;}}
 @media (min-width: 700px){
-	.handyslider{display: none;}
 	.banner1 {height: 55vh;}
 	.banner1 h1{font-size: 8vw;}
 	.banner1 h2{font-size: 4.5vw;}
@@ -107,6 +105,7 @@ h2{font-size: 18px; font-weight: bold;}
 }
 @media(min-width: 1000px){
 	.slider img {transform-origin: center left;}
+	.slider{top: -100px;}
 }
 
 /*=====================================================BANNER2====*/
@@ -148,6 +147,7 @@ p{}
 	width: 82%; height: auto;
 	box-shadow: 2px 2px 8px black; border: 2px solid #001;
 }
+.gallery a{max-width: 90vw;}
 .gallery img:hover{
 	filter: grayscale(90%);
 	transform: scale(1.1);
@@ -168,8 +168,6 @@ p{}
 	.ab-tausend{display: unset;}
 	.sold h3{font-size: 26px;}
 }
-@media(max-width: 1200px){.galdesktop{display: none;}}
-@media(min-width: 1200px){.galhandy{display: none;}}
 @media (min-width: 1600px){.gallery{margin-left: 8%;}}
 /*================================================VERKAUF=====*/
 .ver{position: relative;
@@ -260,12 +258,13 @@ p{}
 }
 
 /*====================================================ABOUT====*/
-.about-wrap{margin: 0px -40px;
+.about-wrap{
 	position: relative;
 	background: url(../img/silhuette02.png) no-repeat;
 	background-size: cover; background-position: center center;
 
 	font-family: arial;
+	width: 100vw; overflow-x: hidden;
 }
 .about{padding: 30px 30px; z-index: 4;
 	position: relative; display: flex; align-items: center;justify-content: center;

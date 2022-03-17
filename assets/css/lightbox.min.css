@@ -13,7 +13,7 @@ body.lb-disable-scrolling{overflow:hidden}
 .lightbox a img{border:none}
 .lb-outerContainer{
 	position:relative; width:250px;height:250px;
-	margin:0 auto;border-radius:4px;background-color:#fff}
+	margin:0 auto;border-radius:4px;background-color:#000}
 .lb-outerContainer:after{content:"";display:table;clear:both}
 
 .lb-loader{top:43%;height:25%;width:100%}
@@ -32,6 +32,10 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-nav a.lb-next{width:40%;right:-60px;float:right;
 	background:url(../img/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0.5;
 	-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
+@media(max-width: 1000px){
+	.lb-nav a.lb-next{right: -10px;}
+	.lb-nav a.lb-prev{left: -10px;}
+}
 .lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}
 
 .lb-dataContainer{margin:0 auto;padding-top:5px;width:100%;
